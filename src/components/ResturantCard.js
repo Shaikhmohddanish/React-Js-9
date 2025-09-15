@@ -1,12 +1,24 @@
-function ResturantCard({ name, rating, eta }){
-  return(
-    <div className='resturant-card'>
-      <img src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/1/24/897bc750-6b57-4e7d-9365-87c1ab2c6d7e_Chinese2.png' alt='Resturant' />
-      <h3>{name}</h3>
-      <p>{rating} Star</p>
-      <p>{eta} mins</p>
-    </div>
-  );
+import { BASE_URL_IMG } from "./API_URL";
+const ResturantCard = (props) => {
+
+  console.log(props.data.info);
+  
+  // const {
+  //   cloudinaryImageId,
+  //   name,
+  //   cuisines,
+  //   avgRating,
+  //   deliveryTime,
+  // } = props.data;
+  // const imageUrl = BASE_URL_IMG + cloudinaryImageId;
+  // return (
+  //   <div className="resturant-card">
+  //     <img src={imageUrl} alt={name} />
+  //     <h3>{name}</h3>
+  //     <p>{avgRating} Star</p>
+  //     <p>{deliveryTime} mins</p>
+  //   </div>  
+  // );
 }
 
 export default ResturantCard;
