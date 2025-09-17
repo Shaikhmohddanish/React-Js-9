@@ -6,7 +6,6 @@ function AllResturants(){
     <h1 style={{ textAlign: "center" }}>All Resturants Nearby</h1>
     <div className='all-resturants'>
       <ResturantCard name='Resturant Name3' rating={4.2} eta={28} />
-      
     </div>
     </>
   );
